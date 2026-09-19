@@ -19,7 +19,7 @@ export default function TrackedProductCard({
   return (
     <div className="card">
       <h2 className="card-title">
-        <Tag size={18} color="#60a5fa" /> Tracked Products ({products.length})
+        <Tag size={18} color="#2563a6" /> Tracked Products ({products.length})
       </h2>
 
       {products.length === 0 ? (

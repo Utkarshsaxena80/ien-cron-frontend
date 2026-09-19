@@ -14,7 +14,7 @@ export default function ScrapeLogsTable({ logs = [] }) {
   return (
     <div className="card" style={{ marginTop: '24px' }}>
       <h2 className="card-title">
-        <ShieldCheck size={18} color="#60a5fa" /> Scraper Audit Logs ({logs.length})
+        <ShieldCheck size={18} color="#2563a6" /> Scraper Audit Logs ({logs.length})
       </h2>
 
       {logs.length === 0 ? (
@@ -46,13 +46,13 @@ export default function ScrapeLogsTable({ logs = [] }) {
                       {log.status}
                     </span>
                   </td>
-                  <td style={{ fontWeight: '600', color: log.extracted_price ? '#60a5fa' : 'var(--text-muted)' }}>
+                  <td style={{ fontWeight: '600', color: log.extracted_price ? '#2563a6' : 'var(--text-muted)' }}>
                     {log.extracted_price ? `₹${log.extracted_price.toLocaleString('en-IN')}` : '-'}
                   </td>
                   <td style={{ fontSize: '0.8rem' }}>
                     {log.extracted_stock || '-'}
                   </td>
-                  <td style={{ fontSize: '0.8rem', color: log.status === 'FAILED' ? '#f87171' : 'var(--text-secondary)' }}>
+                  <td style={{ fontSize: '0.8rem', color: log.status === 'FAILED' ? '#b42318' : 'var(--text-secondary)' }}>
                     {log.message || '-'}
                   </td>
                 </tr>

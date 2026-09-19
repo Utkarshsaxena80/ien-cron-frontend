@@ -5,7 +5,7 @@ export default function Navbar({ onRunScrape, isScraping, scrapeResult }) {
   return (
     <header>
       <div className="brand">
-        <Activity className="w-8 h-8 text-blue-400" size={28} color="#60a5fa" />
+        <Activity className="w-8 h-8" size={28} color="#2563a6" />
         <div>
           <h1>INE Store Price Tracker</h1>
           <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>

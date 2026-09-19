@@ -1,17 +1,17 @@
 :root {
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-card: #1e293b;
-  --bg-card-hover: #334155;
-  --border-color: #334155;
-  --accent-primary: #3b82f6;
-  --accent-hover: #2563eb;
-  --accent-success: #10b981;
-  --accent-warning: #f59e0b;
-  --accent-danger: #ef4444;
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --bg-primary: #f4f6f8;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --border-color: #dce2e8;
+  --accent-primary: #2563a6;
+  --accent-hover: #1d4f86;
+  --accent-success: #237a57;
+  --accent-warning: #a16207;
+  --accent-danger: #b42318;
+  --text-primary: #1f2933;
+  --text-secondary: #52606d;
+  --text-muted: #7b8794;
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
@@ -34,7 +34,7 @@ body {
 
 /* Layout */
 .app-container {
-  max-width: 1320px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 24px 20px 60px;
 }
@@ -43,9 +43,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 24px;
+  padding: 20px 0;
   border-bottom: 1px solid var(--border-color);
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .brand {
@@ -57,9 +57,7 @@ header {
 .brand h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #1f2933;
 }
 
 /* Grid Layout */
@@ -79,8 +77,8 @@ header {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 24px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(31, 41, 51, 0.06);
 }
 
 .card-title {
@@ -102,7 +100,7 @@ header {
 
 .input-field {
   flex: 1;
-  background: #0f172a;
+  background: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 10px 14px;
@@ -140,22 +138,22 @@ header {
 }
 
 .btn-secondary {
-  background: #334155;
+  background: #e8edf2;
   color: var(--text-primary);
 }
 
 .btn-secondary:hover {
-  background: #475569;
+  background: #dce3ea;
 }
 
 .btn-danger {
-  background: rgba(239, 68, 68, 0.15);
-  color: #f87171;
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: #fff1f0;
+  color: var(--accent-danger);
+  border: 1px solid #f3c5c1;
 }
 
 .btn-danger:hover {
-  background: rgba(239, 68, 68, 0.3);
+  background: #ffe4e1;
 }
 
 .btn-sm {
@@ -176,32 +174,32 @@ header {
 }
 
 .badge-success {
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: #e8f5ee;
+  color: #237a57;
+  border: 1px solid #b9dfc9;
 }
 
 .badge-retry {
-  background: rgba(245, 158, 11, 0.15);
-  color: #fbbf24;
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: #fff7df;
+  color: #8a5a00;
+  border: 1px solid #eed58a;
 }
 
 .badge-failed {
-  background: rgba(239, 68, 68, 0.15);
-  color: #f87171;
-  border: 1px solid rgba(239, 68, 68, 0.3);
+  background: #fff1f0;
+  color: #b42318;
+  border: 1px solid #f3c5c1;
 }
 
 .badge-pending {
-  background: rgba(100, 116, 139, 0.15);
-  color: #94a3b8;
-  border: 1px solid rgba(100, 116, 139, 0.3);
+  background: #eef1f4;
+  color: #52606d;
+  border: 1px solid #d5dce3;
 }
 
 /* Product Cards & Lists */
 .product-card {
-  background: #0f172a;
+  background: #f8fafb;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 16px;
@@ -237,7 +235,7 @@ header {
 .product-price {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #60a5fa;
+  color: var(--accent-primary);
   margin: 8px 0 4px;
 }
 
@@ -270,17 +268,17 @@ th, td {
 th {
   color: var(--text-secondary);
   font-weight: 600;
-  background: #0f172a;
+  background: #f5f7f9;
 }
 
 tr:hover td {
-  background: rgba(255, 255, 255, 0.02);
+  background: #f8fafc;
 }
 
 .price-drop-alert {
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  color: #34d399;
+  background: #eaf6ef;
+  border: 1px solid #b9dfc9;
+  color: #237a57;
   padding: 6px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.8rem;

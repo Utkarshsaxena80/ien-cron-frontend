@@ -46,7 +46,7 @@ export default function ProductSearch({ onProductTracked, trackedProductIds = []
   return (
     <div className="card">
       <h2 className="card-title">
-        <Search size={18} color="#60a5fa" /> Search Mock Storefront
+        <Search size={18} color="#2563a6" /> Search Mock Storefront
       </h2>
 
       <form onSubmit={handleSearch} className="search-input-group">
@@ -63,7 +63,7 @@ export default function ProductSearch({ onProductTracked, trackedProductIds = []
       </form>
 
       {error && (
-        <div style={{ color: '#f87171', fontSize: '0.85rem', marginBottom: '12px' }}>
+        <div style={{ color: '#b42318', fontSize: '0.85rem', marginBottom: '12px' }}>
           {error}
         </div>
       )}
@@ -83,7 +83,7 @@ export default function ProductSearch({ onProductTracked, trackedProductIds = []
                   justifyContent: 'space-between',
                   alignItems: 'center',
                   padding: '10px 12px',
-                  background: '#0f172a',
+                  background: '#f8fafb',
                   borderRadius: 'var(--radius-sm)',
                   marginBottom: '8px',
                   border: '1px solid var(--border-color)'
